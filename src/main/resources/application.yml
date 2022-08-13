@@ -1,0 +1,38 @@
+spring:
+
+  api_key: "NCSYCO1EGUYE3K53"
+  api_secret: "T8TYLB7OE8V978SSBRXRSWBIIP8WAATK"
+
+
+  redis:
+    host: localhost
+    port: 6379
+
+  security:
+    user:
+      name: bedi
+      password: bedi
+
+
+  datasource:
+    url: jdbc:mysql://bedi.c1g4vqvq6mqm.ap-northeast-2.rds.amazonaws.com:3306/bedi?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: bedi
+    password: bedibedi
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  logging:
+    level:
+      root :
+        debug
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database: mysql
+
+
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
